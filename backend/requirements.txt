@@ -1,0 +1,4 @@
+fastapi
+uvicorn[standard]
+transformers==4.57.2
+torch        # (CPU-only is fine for inference)
