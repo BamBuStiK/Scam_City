@@ -1,22 +1,20 @@
-version: "3.8"
-
 services:
   backend:
     build:
       context: ./backend
+    container_name: voice_detector_project-backend
     ports:
       - "8000:8000"
     volumes:
-      - ./backend:/app
+      - ./backend/models/phishing_classifier:/app/models/phishing_classifier:ro
     environment:
       - PYTHONUNBUFFERED=1
 
   frontend:
     build:
       context: ./frontend
+    container_name: voice_detector_project-frontend
     ports:
       - "5173:5173"
-    volumes:
-      - ./frontend:/app
     environment:
       - NODE_ENV=development
