@@ -8,4 +8,3 @@ The goal is simple but ambitious:
 📞 While the user is on a phone call, show a live risk bar that warns whether the conversation is likely a scam.
 
 This project blends speech recognition, NLP-based phishing classification, and a lightweight frontend UI into a prototype that can run locally or inside Docker.
-Adding new branch.
